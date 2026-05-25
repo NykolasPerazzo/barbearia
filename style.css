@@ -548,18 +548,45 @@ p {
   opacity: 0.7;
 }
 
+/* Ajuste específico para Telas Menores (Celulares) */
 @media (max-width: 768px) {
+  /* Encolhe e reposiciona os objetos para que fiquem discretos no fundo sem quebrar o grid */
+  .cadeira-edit {
+    width: 80%;
+    object-position: center;
+    opacity: 0.3; /* Mais discreto no mobile para não atrapalhar a leitura do texto */
+  }
+
   .tesoura {
-    top: 115%;
-    left: 55%;
-    object-position: -50%;
-    width: 40%;
+    top: auto;
+    bottom: 5%;
+    left: 10%;
+    width: 25%;
+    opacity: 0.4;
   }
 
   .navalha {
-    left: 55%;
-    rotate: 280deg;
-    width: 50%;
+    left: auto;
+    right: 5%;
+    width: 25%;
+    rotate: 15deg;
+    opacity: 0.4;
+  }
+
+  /* Ajuste fino dos elementos decorativos absolutos para não empurrarem a tela */
+  .cadeira-edit,
+  .tesoura,
+  .navalha {
+    max-width: 100%; /* Impede que fiquem maiores que o bloco pai */
+    pointer-events: none; /* Evita que o usuário clique neles por acidente */
+  }
+
+  /* Corrige espaçamentos do grid no mobile */
+  .section-grid,
+  .localizacao-grid,
+  .reels-grid {
+    width: 100%;
+    overflow: hidden;
   }
 }
 
