@@ -553,6 +553,7 @@ p {
   /* Encolhe e reposiciona os objetos para que fiquem discretos no fundo sem quebrar o grid */
   .cadeira-edit {
     width: 80%;
+    left: 0%;
     object-position: center;
     opacity: 0.3; /* Mais discreto no mobile para não atrapalhar a leitura do texto */
   }
@@ -560,7 +561,7 @@ p {
   .tesoura {
     top: 120%;
     bottom: 5%;
-    left: 10%;
+    left: 40%;
     width: 55%;
     opacity: 0.4;
   }
