@@ -644,6 +644,15 @@ p {
 /* ==========================================================================
    REELS
    ========================================================================== */
+.maquina-dragao {
+  position: absolute;
+  left: -5%;
+  width: 20%;
+  opacity: 1;
+  filter: drop-shadow(0 4px 10px rgba(195, 168, 106, 0.089));
+  z-index: 10;
+}
+
 .reels-grid {
   display: grid;
   grid-template-columns: 1fr;
