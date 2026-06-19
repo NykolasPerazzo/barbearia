@@ -217,6 +217,7 @@ p {
 .btn-sm {
   padding: 0.6rem 1.2rem;
   font-size: 0.9rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
