@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (slides.length > 0) { showSlide(0); startAutoPlay(); }
 
     /* 2. CARROSSEL DA GALERIA */
-    /* 2. CARROSSEL DA GALERIA */
     const photoTrack = document.querySelector('.photo-track');
 
     if (photoTrack && photoTrack.children.length > 0) {

@@ -173,6 +173,7 @@ p {
   transition: var(--transition);
   text-align: center;
   border: none;
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -218,6 +219,13 @@ p {
   font-size: 0.9rem;
 }
 
+@media (max-width: 768px) {
+  .btn-sm {
+    padding: 4px 0.9rem;
+    font-size: 0.7rem;
+  }
+}
+
 .btn-full {
   width: 100%;
   margin-top: 1.5rem;
@@ -232,7 +240,7 @@ p {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(5, 6, 8, 0.8);
+  background: rgba(5, 6, 8, 0.516);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
@@ -276,6 +284,16 @@ p {
 .logo-subtitle {
   font-size: 0.75rem;
   color: var(--secondary);
+}
+
+@media (max-width: 668px) {
+  .logo-title {
+    font-size: 0.65rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.6rem;
+  }
 }
 
 .nav-wrapper {
@@ -380,7 +398,7 @@ p {
 
 .hero-sub {
   font-size: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   max-width: 500px;
 }
 
